@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-export default function Movies() {
-  const [movies, setMovies] = useState([]);
-
+export default function Movies({movies, setMovies}) {
   useEffect(()=>{
     axios("https://api.themoviedb.org/3/movie/popular?api_key=e6931dbed981ba6d29683fd65f60799a")
     .then((result)=>setMovies(result.data.results));
