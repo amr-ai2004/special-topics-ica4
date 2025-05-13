@@ -1,0 +1,82 @@
+{
+  "hash": "8d960437",
+  "configHash": "57636488",
+  "lockfileHash": "2001a9d1",
+  "browserHash": "68f212b2",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "49e38b04",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "2f73f046",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "452b3a1e",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "4d952b50",
+      "needsInterop": false
+    },
+    "react-bootstrap/Container": {
+      "src": "../../node_modules/react-bootstrap/esm/Container.js",
+      "file": "react-bootstrap_Container.js",
+      "fileHash": "483bf874",
+      "needsInterop": false
+    },
+    "react-bootstrap/Nav": {
+      "src": "../../node_modules/react-bootstrap/esm/Nav.js",
+      "file": "react-bootstrap_Nav.js",
+      "fileHash": "348f913c",
+      "needsInterop": false
+    },
+    "react-bootstrap/Navbar": {
+      "src": "../../node_modules/react-bootstrap/esm/Navbar.js",
+      "file": "react-bootstrap_Navbar.js",
+      "fileHash": "79ba33eb",
+      "needsInterop": false
+    },
+    "react-bootstrap/NavDropdown": {
+      "src": "../../node_modules/react-bootstrap/esm/NavDropdown.js",
+      "file": "react-bootstrap_NavDropdown.js",
+      "fileHash": "1b7733ed",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-5HNGYYSW": {
+      "file": "chunk-5HNGYYSW.js"
+    },
+    "chunk-PHBIH4J6": {
+      "file": "chunk-PHBIH4J6.js"
+    },
+    "chunk-7YUQFSHM": {
+      "file": "chunk-7YUQFSHM.js"
+    },
+    "chunk-64LSRNXM": {
+      "file": "chunk-64LSRNXM.js"
+    },
+    "chunk-CDEIZDON": {
+      "file": "chunk-CDEIZDON.js"
+    },
+    "chunk-JXZD6BK6": {
+      "file": "chunk-JXZD6BK6.js"
+    },
+    "chunk-TVFQMRVC": {
+      "file": "chunk-TVFQMRVC.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
