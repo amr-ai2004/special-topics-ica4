@@ -1,24 +1,31 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import axios from 'axios';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Home from './pages/Home';
 import Movies from './pages/Movies';
 import MovieDetails from './pages/MovieDetails';
-import Navbar from './components/navbar';
+import MyNavbar from './components/navbar';
 import Footer from './components/footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const api="https://api.themoviedb.org/3/movie/popular?api_key=e6931dbed981ba6d29683fd65f60799a";
-
+  const [movies, setMovies] = useState([]);
+  
+  useEffect(()=>{
+      axios("https://api.themoviedb.org/3/movie/popular?api_key=e6931dbed981ba6d29683fd65f60799a")
+      .then((result)=>setMovies(result.data.results));
+    },[]);
+  
   return (
     <>
       <Router>
-        <Navbar/>
+        <MyNavbar movies={movies}/>
         <main>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/movies" element={<Movies/>}/>
+            <Route path="/movies" element={<Movies movies={movies} setMovies={setMovies}/>}/>
             <Route path="/moviedetails/:id" element={<MovieDetails/>}/>
             <Route path="*"/>
           </Routes>
