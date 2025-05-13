@@ -16,10 +16,10 @@ export default function MovieDetails() {
       {
         details != undefined ? (
         <>
-          <p>{details.title}</p>
-          <p>{details.overview}</p>
-          <p>{details.vote_average}</p>
           <img src={`https://image.tmdb.org/t/p/w500/${details.backdrop_path}`} alt={details.title}/>
+          <h2>{details.title}</h2>
+          <p><strong>Overview: </strong>{details.overview}</p>
+          <p><strong>Rating: </strong>{details.vote_average}</p>
         </>
         ):(<p>Loading...</p>)
       }
